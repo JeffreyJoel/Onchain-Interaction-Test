@@ -1,21 +1,12 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const currentTimestampInSeconds = Math.round(Date.now() / 1000);
-  const unlockTime = currentTimestampInSeconds + 60;
+  const todoFactory = await ethers.deployContract("TodoFactory");
 
-  const lockedAmount = ethers.parseEther("0.001");
-
-  const lock = await ethers.deployContract("Lock", [unlockTime], {
-    value: lockedAmount,
-  });
-
-  await lock.waitForDeployment();
+  await todoFactory.waitForDeployment();
 
   console.log(
-    `Lock with ${ethers.formatEther(
-      lockedAmount
-    )}ETH and unlock timestamp ${unlockTime} deployed to ${lock.target}`
+    `Factory  deployed to ${todoFactory.target}`
   );
 }
 
@@ -25,3 +16,6 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
+
+
+// Factory contract deployment:  0xEBe91867D2e5aA6364E71d6da8de5d6F364bEd8E
