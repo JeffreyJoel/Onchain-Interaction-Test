@@ -1,13 +1,10 @@
 # Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+## Factory Deployment and Todo contract Creation
+![image](https://github.com/JeffreyJoel/Onchain-Interaction-Test/assets/72028836/e7366cc1-cb24-412c-ac3e-d8ebdd8df80f)
 
-Try running some of the following tasks:
+## Creation of Todo from script
+![image](https://github.com/JeffreyJoel/Onchain-Interaction-Test/assets/72028836/724bfe12-6890-434c-b26a-7bde19a0df37)
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
-```
+## Transaction Hash
+0x096e786026fc7c41945b5223cebc7272bcfe34e751529d95202136aa2b631154
