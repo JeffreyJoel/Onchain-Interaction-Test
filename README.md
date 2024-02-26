@@ -1,4 +1,4 @@
-# Sample Hardhat Project
+# Simple Blog Contract Onchain Interaction
 
 ## Factory Deployment and Blog contract Creation
 ![image](https://github.com/JeffreyJoel/Onchain-Interaction-Test/assets/72028836/0aa3a6ac-5442-47b4-96ee-ef6d60cadbeb)
