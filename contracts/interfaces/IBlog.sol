@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-interface ITodo {
-    function createNewTodo(
+interface IBlog {
+    function createNewBlog(
         string memory _title,
         string memory _description
     ) external;
 
-    function toggleCompleted(uint _i) external;
+    function togglePublished(uint _i) external;
 
-    function deleteTodoItem(uint _i) external;
+    function deleteBlogItem(uint _i) external;
 
     function updateTitle(uint _i, string memory _newTitle) external;
 

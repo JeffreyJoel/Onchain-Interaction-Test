@@ -2,13 +2,13 @@ import { ethers } from "hardhat";
 
 async function main() {
 
-  const todoFactoryContract = "0xEBe91867D2e5aA6364E71d6da8de5d6F364bEd8E";
-  const TODOFACTORY = await ethers.getContractAt("ITodoFactory", todoFactoryContract);
+  const blogFactoryContract = "0x341f806545D278f21ca9E321Fe0E35464A38E1a9";
+  const BLOGFACTORY = await ethers.getContractAt("IBlogFactory", blogFactoryContract);
 
-  const createTodoTx = await TODOFACTORY.createTodoContract();
-  await createTodoTx.wait();
+  const createBlogTx = await BLOGFACTORY.createBlogContract();
+  await createBlogTx.wait();
 
-  const clones = await TODOFACTORY.getTodoContracts();
+  const clones = await BLOGFACTORY.getBlogContracts();
 
   console.log(clones);
 }

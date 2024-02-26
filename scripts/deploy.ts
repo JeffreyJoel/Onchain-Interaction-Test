@@ -1,7 +1,7 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const todoFactory = await ethers.deployContract("TodoFactory");
+  const todoFactory = await ethers.deployContract("BlogFactory");
 
   await todoFactory.waitForDeployment();
 
@@ -18,4 +18,4 @@ main().catch((error) => {
 });
 
 
-// Factory contract deployment:  0xEBe91867D2e5aA6364E71d6da8de5d6F364bEd8E
+// Blog Factory contract deployment:  0x341f806545D278f21ca9E321Fe0E35464A38E1a9

@@ -2,16 +2,16 @@ import { ethers } from "hardhat";
 
 async function main() {
   try {
-    const TodoContract = "0x786c61bbEa01953E23EDA442d3622202F9439d9C";
-    const TODO = await ethers.getContractAt("Todo", TodoContract);
+    const BlogContract = "0x31889016b2aE083cb85adA7B23b5b216c4314F0f";
+    const Blog = await ethers.getContractAt("Blog", BlogContract);
 
-    const createTodo = await TODO.createNewTodo('AnotherTodo', 'Sample description');
-    await createTodo.wait();
+    const createBlog = await Blog.createNewBlog('Blog Title', 'Sample description');
+    await createBlog.wait();
 
-    console.log("Todo created:", createTodo);
+    console.log("Blog created:", createBlog);
 
-    const todoList = await TODO.todoList(0);
-    console.log("Todo list:", todoList);
+    const BlogList = await Blog.blogList(0);
+    console.log("Blog list:", BlogList);
   } catch (error) {
     console.error("Error:", error);
     process.exitCode = 1;
