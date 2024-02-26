@@ -13,9 +13,14 @@ async function main() {
   console.log(clones);
 }
 
+
+
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
 main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
+
+// Creation of Blog from Factory Transaction Hash
+// 0xeaea9731d28f071de548de6092558edb0a0f529cc0f55d9029f72448ce0dce23
